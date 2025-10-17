@@ -17,4 +17,4 @@ jobs:
       - uses: promptfoo/promptfoo-action@v1
         with:
           # Optional: Specify the path to your promptfoo config file
-          # config: './path/to/promptfoo.yaml'
+          config: './promptfoo.yaml'
