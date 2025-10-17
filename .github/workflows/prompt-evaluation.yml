@@ -1,9 +1,9 @@
-name: 'Prompt Evaluation'
+name: "Prompt Evaluation"
 
 on:
   pull_request:
     paths:
-      - 'prompt/**' # Trigger the action when files in the 'prompts' directory are modified
+      - 'prompts/**' # Trigger the action when files in the 'prompts' directory are modified
 
 jobs:
   evaluate:
