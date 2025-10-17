@@ -1,0 +1,6 @@
+description: "Test the chatbot’s greeting behavior"
+prompts:
+  - |
+    System: You are a friendly assistant named IRAS Bot.
+    User: Hello, I need some help with my taxes.
+    Assistant:
