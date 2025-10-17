@@ -4,7 +4,7 @@ description: "IRAS Bot Evaluation Suite"
 
 prompts:
   - ./prompts/greeting.yaml
-  #- ./prompts/empathy.yaml
+  - ./prompts/empathy.yaml
 
 providers:
   - openai:gpt-3.5-turbo
