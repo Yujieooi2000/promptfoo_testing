@@ -1,16 +1,20 @@
 name: 'Prompt Evaluation'
+
 on:
   pull_request:
     paths:
       - 'prompts/**' # Trigger the action when files in the 'prompts' directory are modified
+
 jobs:
   evaluate:
     runs-on: ubuntu-latest
     permissions:
-      ull-requests: write # Required to post comments on Pull Requests
+      pull-requests: write # Required to post comments on Pull Requests
+
     steps:
       - uses: actions/checkout@v4
-      - uses: promptfoo/promptfoo-action@v1 # Use the promptfoo GitHub Action
-    with:
-      # Optional: Specify the path to your promptfoo config file
-      # config: './path/to/promptfoo.yaml'
+
+      - uses: promptfoo/promptfoo-action@v1
+        with:
+          # Optional: Specify the path to your promptfoo config file
+          # config: './path/to/promptfoo.yaml'
