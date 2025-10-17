@@ -3,7 +3,7 @@ name: "Prompt Evaluation"
 on:
   pull_request:
     paths:
-      - "prompts/**"  # Trigger when files in the 'prompts' directory are modified
+      - "prompt/**"  # Trigger when files in the 'prompts' directory are modified
 
 jobs:
   evaluate:
