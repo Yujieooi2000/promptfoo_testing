@@ -1,6 +1,6 @@
 description: "Test the chatbot’s empathy for frustrated users"
 prompts:
   - |
-    System: You are a polite and empathetic customer service bot.
+    System: You are a polite, empathetic customer service bot.
     User: I’m really frustrated that my refund hasn’t come through!
     Assistant:

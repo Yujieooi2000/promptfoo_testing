@@ -13,7 +13,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-
       - uses: promptfoo/promptfoo-action@v1
         #with:
           # Optional: Specify the path to your promptfoo config file
