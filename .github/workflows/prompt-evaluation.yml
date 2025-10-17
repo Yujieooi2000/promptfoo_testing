@@ -1,0 +1,25 @@
+name: "Prompt Evaluation"
+
+on:
+  pull_request:
+    paths:
+      - "prompts/**"  # Trigger when files in the 'prompts' directory are modified
+
+jobs:
+  evaluate:
+    runs-on: ubuntu-latest
+    permissions:
+      pull-requests: write  # Required to post comments on Pull Requests
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run Promptfoo evaluation
+        uses: promptfoo/promptfoo-action@v1
+        with:
+          # Optional: specify the path to your promptfoo config file
+          # config: ./path/to/promptfoo.yaml
+        env:
+          # Make sure to set this in GitHub Secrets (Settings → Secrets → Actions)
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
