@@ -1,4 +1,4 @@
-name: "Prompt Evaluation"
+name: Prompt Evaluation
 
 on:
   pull_request:
